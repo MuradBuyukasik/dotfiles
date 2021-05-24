@@ -8,7 +8,7 @@ Clone this repo and then:
 ```
 
 **Redshift**
-* Replace `lat` and `lon` in `~/.config/redshift/redshift.conf`.
+* Setup [GeoClue2](https://wiki.archlinux.org/title/Redshift#Automatic_location_based_on_GeoClue2)
 
 **Vim**
 * Install [junegunn/vim-plug](https://github.com/junegunn/vim-plug).
