@@ -1,66 +1,45 @@
-include-file = ~/.config/polybar/modules.ini
 include-file = ~/.config/polybar/colors.ini
+include-file = ~/.config/polybar/modules.ini
 
 [bar/system]
-monitor = 
-monitor-fallback = eDP-1
-bottom = false
-fixed-center = true
-
-width = 5%
-height = 30
-
-offset-x = 70.5%
-offset-y = 10
-radius = 15
-enable-ipc = true
-
 background = ${colors.background}
+bottom = false
+enable-ipc = true
+fixed-center = true
+font-0 = "Cozette:pixelsize=13:style=Regular;3"
 foreground = ${colors.foreground}
-
-padding = 3
-
-font-0 = "Noto Sans:pixelsize=16:style=Regular;2" 
-font-1 = "Noto Color Emoji:pixelsize=16:style=Regular:scale=10;2"
-
-modules-center = battery pulseaudio
+height = 40
+module-margin = 1
+modules-center = battery volume date
+monitor =
+monitor-fallback = eDP-1
+offset-x = 88%:-10
+offset-y = 10
+padding = 0
+radius = 0
+width = 12%
 
 [bar/bspwm]
-monitor = 
-monitor-fallback = eDP-1
-bottom = false
-fixed-center = true
-
-width = 40%
-height = 30
-
-offset-x = 30%
-offset-y = 10
-radius = 15
-enable-ipc = true
-
 background = ${colors.background}
+bottom = false
+enable-ipc = true
+fixed-center = true
+font-0 = "Cozette:pixelsize=13:style=Regular;3"
+font-1 = "Iosevka Nerd Font:pixelsize=13:style=Regular;3"
 foreground = ${colors.foreground}
-
-padding = 3
-module-margin = 2
-
-font-0 = "Noto Sans:pixelsize=16:style=Regular;2" 
-font-1 = "Noto Color Emoji:pixelsize=16:style=Regular:scale=10;2"
-
-; under-/overline pixel size and color
-line-size = 0
+height = 40
 line-color = #f00
-
-modules-left = bspwm
-modules-center =
-modules-right = date
-
-tray-position = none
-tray-maxsize = 16
-tray-padding = 3
-tray-scale = 1.0
-
-scroll-up = #bspwm.prev
+line-size = 0
+module-margin-right = 4
+modules-center = menu bspwm
+modules-left =
+modules-right =
+monitor =
+monitor-fallback = eDP-1
+offset-x = 10
+offset-y = 10
+padding = 2
+radius = 0
 scroll-down = #bspwm.next
-
+scroll-up = #bspwm.prev
+width = 10%
