@@ -12,6 +12,7 @@ unsetopt beep
 
 # vi mode
 bindkey -v
+export KEYTIMEOUT=1
 
 # Change cursor shape for different vi modes.
 function zle-keymap-select {
