@@ -13,3 +13,8 @@ Clone this repo and then:
 **Vim**
 * Install [junegunn/vim-plug](https://github.com/junegunn/vim-plug).
 * In Vim run `:PlugInstall`.
+
+**Zsh**
+* Create folder `~/.zsh/plugins`
+* Install [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+* Install [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)

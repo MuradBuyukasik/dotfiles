@@ -38,13 +38,13 @@ super + Escape
 # audio keys
 #
 XF86AudioRaiseVolume
-    pactl set-sink-volume 0 +3%
+    pamixer --increase 2
 
 XF86AudioLowerVolume
-    pactl set-sink-volume 0 -3%
+    pamixer --decrease 2
 
 XF86AudioMute
-    pactl set-sink-mute 0 toggle
+    pamixer -t
 
 XF86AudioPlay
     playerctl play-pause
