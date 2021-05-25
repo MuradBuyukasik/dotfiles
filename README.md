@@ -1,3 +1,4 @@
+**Installing**
 This is generated using [stow](https://www.gnu.org/software/stow/).
 
 Clone this repo and then:
@@ -6,6 +7,8 @@ Clone this repo and then:
 & cd .dotfiles
 & stow --adopt -vt ~ */
 ```
+
+Or manually copy files to its designated folder.
 
 **Redshift**
 * Setup [GeoClue2](https://wiki.archlinux.org/title/Redshift#Automatic_location_based_on_GeoClue2)
