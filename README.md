@@ -4,9 +4,7 @@
 
 [Wallpaper](https://wallhaven.cc/w/8o3o7k).
 
-This is generated using [stow](https://www.gnu.org/software/stow/).
-
-Clone this repo and then:
+Clone this repo and use [stow](https://www.gnu.org/software/stow/):
 
 ```
 & cd .dotfiles
