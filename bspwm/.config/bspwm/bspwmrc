@@ -5,7 +5,10 @@ sxhkd &
 ~/.fehbg
 picom & 
 ~/.config/polybar/launch.sh
-killall -q redshift &
+killall -q redshift
+# redshift doesn't get terminated directly after invoking the kill command
+# we have to wait until it's done transitioning before launching redshift again:
+tail --pid=$(pidof redshift) -f /dev/null
 redshift -l geoclue2 &
 
 if [[ $(autorandr --detected) = "desk" ]]; then
