@@ -1,3 +1,5 @@
+![desktop screenshot](https://raw.githubusercontent.com/MuradBuyukasik/.dotfiles/main/20210525_152301.png)
+
 # Installing
 
 This is generated using [stow](https://www.gnu.org/software/stow/).
