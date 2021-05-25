@@ -11,7 +11,7 @@ foreground = ${colors.foreground}
 height = 40
 module-margin = 1
 modules-center = battery volume date
-monitor =
+monitor = ${env:MONITOR:}
 monitor-fallback = eDP-1
 offset-x = 88%:-10
 offset-y = 10
@@ -34,7 +34,7 @@ module-margin-right = 4
 modules-center = menu bspwm
 modules-left =
 modules-right =
-monitor =
+monitor = ${env:MONITOR:}
 monitor-fallback = eDP-1
 offset-x = 10
 offset-y = 10
@@ -43,3 +43,18 @@ radius = 0
 scroll-down = #bspwm.next
 scroll-up = #bspwm.prev
 width = 10%
+
+[bar/quote]
+background = ${colors.transparent}
+bottom = false
+enable-ipc = true
+fixed-center = true
+font-0 = "Cozette:pixelsize=13:style=Regular;3"
+foreground = ${colors.foreground}
+height = 40
+modules-left = quote
+monitor = ${env:MONITOR:}
+monitor-fallback = eDP-1
+offset-x = 10%:+20
+offset-y = 10
+width = 78%:-40
